@@ -25,6 +25,16 @@ body{
     min-width: 200px;
     margin: 20px;
 }
+.main{
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: lightblue;
+    width: 98%;
+    display: block;
+    box-shadow: 0 20px 25px -5px #0077b6, 0 10px 10px -5px #0077b6;
+    margin-bottom: 15px;
+}
 .footer{
     width: 100%;
     background-color: #0077b6;
