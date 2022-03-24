@@ -31,7 +31,7 @@ body{
     margin: 10px;
     border-radius: 10px;
     background-color: lightblue;
-    width: 98%;
+    width: 99%;
     display: block;
     box-shadow: 0 20px 25px -5px #0077b6, 0 10px 10px -5px #0077b6;
     margin-bottom: 15px;
@@ -53,7 +53,22 @@ body{
     padding-left: 20px;
     font-size: 20px;
 	width: 70%;
-	height: 30%;
+	height: 25%;
+	border-radius: 10px 10px 10px 10px;
+	background-color: lightskyblue;
+	border-color: lightskyblue;
+	text-decoration: none;
+	outline: none;
+	color: white;
+    border: 0px;
+    box-shadow: 0 10px 15px -5px #0077b6, 0 5px 5px -5px #0077b6;
+    font-weight: 800;
+}
+.letter{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 20px;
+    width: 50%;
 	border-radius: 10px 10px 10px 10px;
 	background-color: lightskyblue;
 	border-color: lightskyblue;
@@ -63,7 +78,20 @@ body{
     border: 0px;
     box-shadow: 0 10px 15px -5px #0077b6, 0 5px 5px -5px #0077b6;
 }
+.letter table{
+    width: 100%;
+}
+.letter input{
+    text-align: center;
+    width: 20px;
+    
+}
+.letter input:focus{
+    border: 0px;
+    box-shadow: 0 10px 15px -5px #0077b6, 0 5px 5px -5px #0077b6;
+}
 .button{
+    display: inline-block;
     margin-top: 20px;
     padding: 10px;
 	width: 100px;

@@ -1,6 +1,7 @@
 function LetterChanges() {
-  var eingabe = "MTZ IXKIS WZTBBIK DHGLI DTRKPI IXK HZSIZ RTGJRHNQIZ SXP BIXKIZ OZHU UKL BIXKIK JDIX QXKLIZK; LHB EUIENRIK RXIBB RHIKBIG UKL LHB SHILNRIK WZIPIG. IZ RHPPI DIKXW JU EIXBBIK UKL JU EZINRIK, UKL IXKSHG, HGB WZTBBI PIUIZUKW XKB GHKL QHS, QTKKPI IZ LHB PHIWGXNRI EZTP KXNRP SIRZ BNRHOOIK. DXI IZ BXNR KUK HEIKLB XS EIPPI WILHKQIK SHNRPI UKL BXNR MTZ BTZWIK RIZUSDHIGJPI, BIUOJPI IZ UKL BCZHNR JU BIXKIZ OZHU: ``DHB BTGG HUB UKB DIZLIK ? DXI QTIKKIK DXZ UKBIZI HZSIK QXKLIZ IZKHIRZIK LH DXZ OUIZ UKB BIGEBP KXNRPB SIRZ RHEIK?´´ ``DIXBBP LU DHB, SHKK´´, HKPDTZPIPI LXI OZHU, ``DXZ DTGGIK STZWIK XK HGGIZ OZUIRI LXI QXKLIZ RXKHUB XK LIK DHGL OUIRZIK, DT IZ HS LXNQBPIK XBP. LH SHNRIK DXZ XRKIK IXK OIUIZ HK UKL WIEIK VILIS KTNR IXK BPUINQNRIK EZTP, LHKK WIRIK DXZ HK UKBIZI HZEIXP UKL GHBBIK BXI HGGIXK.BXI OXKLIK LIK DIW KXNRP DXILIZ KHNR RHUB, UKL DXZ BXKL BXI GTB.´´"
+  var eingabe = document.getElementById("eingabe").value;
   eingabe = eingabe.toUpperCase();
+  console.log(eingabe);
   var s = eingabe.split('');
   for (var i = 0; i < s.length; i++) {
     // Caesar cipher
@@ -10,107 +11,107 @@ function LetterChanges() {
         break;
       //A
       case 'A':
-        s[i] = '';
+        s[i] = document.getElementById("a").value;
         break;
       //B
       case 'B':
-        s[i] = 's';
+        s[i] = document.getElementById("b").value;
         break;
       //C
       case 'C':
-        s[i] = 'p';
+        s[i] = document.getElementById("c").value;
         break;
       //D
       case 'D':
-        s[i] = 'w';
+        s[i] = document.getElementById("d").value;
         break;
       //E
       case 'E':
-        s[i] = 'b';
+        s[i] = document.getElementById("e").value;
         break;
       //F
       case 'F':
-        s[i] = '';
+        s[i] = document.getElementById("f").value;
         break;
       //G
       case 'G':
-        s[i] = 'l';
+        s[i] = document.getElementById("g").value;
         break;
       //H
       case 'H':
-        s[i] = 'a';
+        s[i] = document.getElementById("h").value;
         break;
       //I
       case 'I':
-        s[i] = 'e';
+        s[i] = document.getElementById("i").value;
         break;
       //J
       case 'J':
-        s[i] = 'z';
+        s[i] = document.getElementById("j").value;
         break;
       //K
       case 'K':
-        s[i] = 'n';
+        s[i] = document.getElementById("k").value;
         break;
       //L
       case 'L':
-        s[i] = 'd';
+        s[i] = document.getElementById("l").value;
         break;
       //M
       case 'M':
-        s[i] = 'v';
+        s[i] = document.getElementById("m").value;
         break;
       //N
       case 'N':
-        s[i] = 'c';
+        s[i] = document.getElementById("n").value;
         break;
       //O
       case 'O':
-        s[i] = 'f';
+        s[i] = document.getElementById("o").value;
         break;
       //P
       case 'P':
-        s[i] = 't';
+        s[i] = document.getElementById("p").value;
         break;
       //Q
       case 'Q':
-        s[i] = 'k';
+        s[i] = document.getElementById("q").value;
         break;
       //R
       case 'R':
-        s[i] = 'h';
+        s[i] = document.getElementById("r").value;
         break;
       //S
       case 'S':
-        s[i] = 'm';
+        s[i] = document.getElementById("s").value;
         break;
       //T
       case 'T':
-        s[i] = 'o';
+        s[i] = document.getElementById("t").value;
         break;
       //U
       case 'U':
-        s[i] = 'u';
+        s[i] = document.getElementById("u").value;
         break;
       //V
       case 'V':
-        s[i] = 'j';
+        s[i] = document.getElementById("v").value;
         break;
       //W
       case 'W':
-        s[i] = 'g';
+        s[i] = document.getElementById("w").value;
         break;
       //X
       case 'X':
-        s[i] = 'i';
+        s[i] = document.getElementById("x").value;
         break;
       //Y
       case 'Y':
-        s[i] = '';
+        s[i] = document.getElementById("y").value;
         break;
       //Z
       case 'Z':
-        s[i] = 'r';
+        s[i] = document.getElementById("z").value;
         break;
       //sonderzeichen
       case ';':
@@ -138,18 +139,11 @@ function LetterChanges() {
         s[i] = '!';
         break;
       default:
-        s[i] = String.fromCharCode(1 + s[i].charCodeAt(0));
-    }
-  } return s.join('');
-} Umlaute();
-function Umlaute(){
-  var ergebnis = LetterChanges().replace(/ae/g, "ä")
-  ergebnis = ergebnis.replace(/ue/g, "ü");
-  ergebnis = ergebnis.replace(/oe/g, "ö");
-  ergebnis = ergebnis.replace(/feür/g, "feuer");
-  ergebnis = ergebnis.replace(/teürung/g, "teuerung");
-  console.log("Funktion Umlaute Ende");
-  return ergebnis;
+        s[i] = '#';
+    } var ergebnis = s.join('')
+    document.getElementById("end").innerHTML = ergebnis;
+    console.log(ergebnis)
+  }
 }
-console.log(Umlaute());
+
 

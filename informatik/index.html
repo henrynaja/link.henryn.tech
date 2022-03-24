@@ -23,20 +23,80 @@
         </h2>
         <p>Entschlüsselung eines substitutions Chiffres mit einer Zuordnungstabelle</a></p>
     </div>
-    <div class="main" style="height: 800px;">
+    <div class="main" style="height: 900px;">
         <br>
         <p>Zu entschlüsselnde Botschaft eingeben:</a></p>
-        <textarea id="eingabe" cols="50" rows="2" class="input" placeholder="Geheime Botschaft eingeben">MTZ IXKIS WZTBBIK DHGLI DTRKPI IXK HZSIZ RTGJRHNQIZ SXP BIXKIZ OZHU UKL BIXKIK JDIX QXKLIZK; LHB EUIENRIK RXIBB RHIKBIG UKL LHB SHILNRIK WZIPIG. IZ RHPPI DIKXW JU EIXBBIK UKL JU EZINRIK, UKL IXKSHG, HGB WZTBBI PIUIZUKW XKB GHKL QHS, QTKKPI IZ LHB PHIWGXNRI EZTP KXNRP SIRZ BNRHOOIK. DXI IZ BXNR KUK HEIKLB XS EIPPI WILHKQIK SHNRPI UKL BXNR MTZ BTZWIK RIZUSDHIGJPI, BIUOJPI IZ UKL BCZHNR JU BIXKIZ OZHU: ``DHB BTGG HUB UKB DIZLIK ? DXI QTIKKIK DXZ UKBIZI HZSIK QXKLIZ IZKHIRZIK LH DXZ OUIZ UKB BIGEBP KXNRPB SIRZ RHEIK?´´ ``DIXBBP LU DHB, SHKK´´, HKPDTZPIPI LXI OZHU, ``DXZ DTGGIK STZWIK XK HGGIZ OZUIRI LXI QXKLIZ RXKHUB XK LIK DHGL OUIRZIK, DT IZ HS LXNQBPIK XBP. LH SHNRIK DXZ XRKIK IXK OIUIZ HK UKL WIEIK VILIS KTNR IXK BPUINQNRIK EZTP, LHKK WIRIK DXZ HK UKBIZI HZEIXP UKL GHBBIK BXI HGGIXK.BXI OXKLIK LIK DIW KXNRP DXILIZ KHNR RHUB, UKL DXZ BXKL BXI GTB.´´
-        </textarea>
+        <textarea id="eingabe" cols="50" rows="2" class="input" placeholder="Geheime Botschaft eingeben"></textarea>
+        <br>
+        <p>Geheimalphabet</p>
+        <div class="letter">
+            <table>
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I</td>
+                    <td>J</td>
+                    <td>K</td>
+                    <td>L</td>
+                    <td>M</td>
+                    <td>N</td>
+                    <td>O</td>
+                    <td>P</td>
+                    <td>Q</td>
+                    <td>R</td>
+                    <td>S</td>
+                    <td>T</td>
+                    <td>U</td>
+                    <td>V</td>
+                    <td>W</td>
+                    <td>X</td>
+                    <td>Y</td>
+                    <td>Z</td>
+                </tr>
+                <tr>
+                    <td><input id="a" value=""></td>
+                    <td><input id="b" value="s"></td>
+                    <td><input id="c" value="p"></td>
+                    <td><input id="d" value="w"></td>
+                    <td><input id="e" value="b"></td>
+                    <td><input id="f" value=""></td>
+                    <td><input id="g" value="l"></td>
+                    <td><input id="h" value="a"></td>
+                    <td><input id="i" value="e"></td>
+                    <td><input id="j" value="z"></td>
+                    <td><input id="k" value="n"></td>
+                    <td><input id="l" value="d"></td>
+                    <td><input id="m" value="v"></td>
+                    <td><input id="n" value="c"></td>
+                    <td><input id="o" value="f"></td>
+                    <td><input id="p" value="t"></td>
+                    <td><input id="q" value="k"></td>
+                    <td><input id="r" value="h"></td>
+                    <td><input id="s" value="m"></td>
+                    <td><input id="t" value="o"></td>
+                    <td><input id="u" value="u"></td>
+                    <td><input id="v" value="j"></td>
+                    <td><input id="w" value="g"></td>
+                    <td><input id="x" value="i"></td>
+                    <td><input id="y" value=""></td>
+                    <td><input id="z" value="r"></td>
+                </tr>
+            </table>
+        </div>
         <br>
         <button class="button" onclick="LetterChanges()">Entschlüsseln</button>
         <p>Entschlüsselte Chiffre:</p>
-        <textarea cols="50" rows="2" class="input" disabled placeholder="Entschlüsselte Chiffre">vor einem grossen walde wohnte ein armer holzhacker mit seiner frau und seinen zwei kindern; das bübchen hiess hänsel und das mädchen gretel. er hatte wenig zu beissen und zu brechen, und einmal, als grosse teuerung ins land kam, konnte er das tägliche brot nicht mehr schaffen. wie er sich nun abends im bette gedanken machte und sich vor sorgen herumwälzte, seufzte er und sprach zu seiner frau: ``was soll aus uns werden ? wie können wir unsere armen kinder ernähren da wir für uns selbst nichts mehr haben?´´ ``weisst du was, mann´´, antwortete die frau, ``wir wollen morgen in aller frühe die kinder hinaus in den wald führen, wo er am dicksten ist. da machen wir ihnen ein feuer an und geben jedem noch ein stückchen brot, dann gehen wir an unsere arbeit und lassen sie allein.sie finden den weg nicht wieder nach haus, und wir sind sie los.´´
-        </textarea>
+        <textarea cols="50" rows="2" class="input" id="end" disabled placeholder="Entschlüsselte Chiffre"></textarea>
     </div>
     <footer>
         <div class="footer">
-            <p>&copy; 2022 <a>Henry</a>
+            <p>&copy; 2022 <a href="https://github.com/HY0077">Henry</a>
             </p>
         </div>
 
