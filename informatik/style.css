@@ -104,7 +104,9 @@ body{
 	color: white;
     border: 0px;
     box-shadow: 0 10px 15px -5px #0077b6, 0 5px 5px -5px #0077b6;
+    cursor: pointer;
 }
+
 .button:hover{
     transition-duration: 300ms;
     box-shadow: 0 20px 25px -5px #01a6ff, 0 10px 10px -5px #01a6ff;
